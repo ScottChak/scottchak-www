@@ -1,0 +1,28 @@
+.wrapper {
+  @extend .bg-white;
+
+  position: relative;
+  padding: $header-height 0px $footer-height;
+
+  font-size: $font-size-sm;
+
+  .header,
+  .footer {
+    position: absolute;
+    width: 100%;
+  }
+
+  .header {
+    top: 0px;
+  }
+
+  .footer {
+    bottom: 0px;
+  }
+
+  h1 {
+    @extend .text-primary;
+
+    text-align: center;
+  }
+}

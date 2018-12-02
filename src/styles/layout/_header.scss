@@ -1,0 +1,4 @@
+.header {
+  @extend .bg-dark;
+  @include inline-nav($header-height);
+}

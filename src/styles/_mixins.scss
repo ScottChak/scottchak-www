@@ -1,0 +1,17 @@
+@mixin inline-nav($height) {
+  height: $height;
+  line-height: $height;
+
+  .nav {
+    .nav-item {
+      .nav-link {
+        padding: 0px 16px;
+        line-height: $height;
+
+        &:first-child {
+          padding-left: 0px;
+        }
+      }
+    }
+  }
+}

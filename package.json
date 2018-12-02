@@ -1,0 +1,38 @@
+{
+  "name": "scottchak-www",
+  "version": "1.0.0",
+  "description": "Content for scottchak.bytehappens.com",
+  "author": "Ewan \"ScottChak\" BURNS",
+  "license": "MIT",
+  "scripts": {
+    "clean": "grunt cleanAll",
+    "dev": "grunt prepare && concurrently \"parcel .tmp/index.html -d .dev/\" \"grunt watch\"",
+    "bundle": "parcel build .tmp/index.html -d .build/",
+    "publish": "gh-pages -r https://github.com/ScottChak/scottchak.github.io.git -d .dist -b master",
+    "build": "grunt build",
+    "deploy": "grunt deploy"
+  },
+  "dependencies": {
+    "@types/angular": "^1.6.51",
+    "@types/bootstrap": "^4.1.2",
+    "@types/jquery": "^3.3.22",
+    "@uirouter/angularjs": "^1.0.20",
+    "angular": "^1.7.5",
+    "bootstrap": "^4.1.3",
+    "jquery": "^3.3.1",
+    "popper.js": "^1.14.5"
+  },
+  "devDependencies": {
+    "concurrently": "^4.1.0",
+    "gh-pages": "^2.0.1",
+    "grunt": "^1.0.3",
+    "grunt-contrib-clean": "^2.0.0",
+    "grunt-contrib-copy": "^1.0.0",
+    "grunt-contrib-watch": "^1.1.0",
+    "grunt-html2js": "^0.5.1",
+    "grunt-shell": "^2.1.0",
+    "node-sass": "^4.10.0",
+    "parcel-bundler": "^1.10.3",
+    "typescript": "^3.1.6"
+  }
+}

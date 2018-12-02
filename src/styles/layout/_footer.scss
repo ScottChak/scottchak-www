@@ -1,0 +1,27 @@
+.footer {
+  @extend .bg-light;
+  @extend .text-muted;
+  @include inline-nav($footer-height);
+
+  font-size: $font-size-xs;
+
+  .copyright {
+    text-align: left;
+  }
+
+  .logo {
+    text-align: center;
+
+    .home {
+      display: inline-block;
+      width: $footer-logo-height;
+      height: $footer-height;
+      background: transparent url("../images/scottchak.png") no-repeat center center;
+      background-size: $footer-logo-height $footer-logo-height;
+    }
+  }
+
+  .links {
+    text-align: right;
+  }
+}
