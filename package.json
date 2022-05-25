@@ -25,7 +25,7 @@
   "devDependencies": {
     "concurrently": "^4.1.0",
     "gh-pages": "^2.0.1",
-    "grunt": "^1.0.3",
+    "grunt": "^1.5.3",
     "grunt-contrib-clean": "^2.0.0",
     "grunt-contrib-copy": "^1.0.0",
     "grunt-contrib-watch": "^1.1.0",
